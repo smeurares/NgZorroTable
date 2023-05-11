@@ -1,0 +1,33 @@
+<div>
+  <app-add-modal (addedUser)="addUser($event)"></app-add-modal>
+  <nz-table
+    #basicTable
+    [nzData]="listOfData"
+    nzShowPagination
+    [nzPageSize]="5"
+    (nzCurrentPageDataChange)="onCurrentPageDataChange($event)"
+  >
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Nickname</th>
+        <th>Age</th>
+        <th>Job</th>
+        <th>Gender</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable.data">
+        <td>{{ data.name }}</td>
+        <td>{{ data.nickname }}</td>
+        <td>{{ data.age }}</td>
+        <td>{{ data.job }}</td>
+        <td>{{ data.gender }}</td>
+        <td>
+          <app-edit-modal [user]="data" (editedUser)="editUser($event)"></app-edit-modal>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
+</div>

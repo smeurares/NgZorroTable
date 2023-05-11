@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "name": "John ",
+      "nickname": "New York No. 1 Lake Park",
+      "age": 32,
+      "job": "programmer",
+      "gender": "male",
+      "id": "1"
+    },
+    {
+      "name": "proper",
+      "nickname": "adads",
+      "age": 22,
+      "job": "22",
+      "gender": "male",
+      "id": "58ouQ_-"
+    },
+    {
+      "name": "555",
+      "nickname": "adads",
+      "age": 22,
+      "job": "22",
+      "gender": "male",
+      "id": "C02JSHY"
+    },
+    {
+      "name": "sadda",
+      "nickname": "aasdads",
+      "age": 18,
+      "job": "worker",
+      "gender": "female",
+      "id": "Uwr7MsP"
+    }
+  ]
+}
